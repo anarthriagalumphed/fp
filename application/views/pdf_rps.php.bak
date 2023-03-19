@@ -1,0 +1,37 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <title>Pdf_rps</title>
+</head>
+
+<body>
+    <table>
+        <tr>
+            <th>No</th>
+            <th>Kode Matkul</th>
+            <th>Nama Prodi</th>
+            <th>Nama Matkul</th>
+            <th>Dosen Penyusun</th>
+            <th>Nik Dosen</th>
+            <th>Tanggal Berlaku</th>
+            <th></th>
+        </tr>
+        <?php $no = 1;
+        foreach ($ngetokne as $exp) : ?>
+            <tr>
+                <td>
+                <td><?= $no++ ?></td>
+                <td><?= $exp->kode_matkul ?></td>
+                <td><?= $exp->nama_prodi ?></td>
+                <td><?= $exp->nama_matkul ?></td>
+                <td><?= $exp->nama_dosen_penyusun ?></td>
+                <td><?= $exp->nik_dosen_penyusun ?></td>
+                <td><?= $exp->tgl_berlaku ?></td>
+                </td>
+            </tr>
+        <?php endforeach ?>
+    </table>
+</body>
+
+</html>
